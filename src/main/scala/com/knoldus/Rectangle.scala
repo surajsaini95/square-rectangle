@@ -1,8 +1,8 @@
 package com.knoldus
 
-class Rectangle(length : Double, breadth : Double) extends FourSidedShape {
+class Rectangle(length: Double, breadth: Double) extends FourSidedShape {
 
-  override val width : Double =breadth
-  override val height : Double = length
+  override var width: Double = breadth
+  override var height: Double = length
 
 }

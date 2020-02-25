@@ -2,8 +2,8 @@ package com.knoldus
 
 trait FourSidedShape {
 
-  val height : Double = 0
-  val width : Double = 0
+  var height: Double
+  var width: Double
 
-  def shapeArea: Double = height*width
+  def shapeArea: Double = height * width
 }
