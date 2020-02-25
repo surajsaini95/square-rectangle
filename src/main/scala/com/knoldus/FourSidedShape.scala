@@ -5,5 +5,5 @@ trait FourSidedShape {
   var height: Double
   var width: Double
 
-  def shapeArea: Double = height * width
+  def getShapeArea: Double = height * width
 }
