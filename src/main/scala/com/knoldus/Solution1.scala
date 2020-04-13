@@ -12,7 +12,11 @@ object Solution1 extends App {
   val areaOfRectangle2 = rectangle2.getShapeArea
 
   val side = 5
-  val square: FourSidedShape = new Square(side)
+  val square1: FourSidedShape = new Square(side)
 
-  val areaOfSquare = square.getShapeArea
+  val areaOfSquare1 = square1.getShapeArea
+  
+    val square2: FourSidedShape = new Square(side)
+
+  val areaOfSquare2 = square2.getShapeArea
 }
