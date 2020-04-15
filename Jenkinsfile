@@ -32,9 +32,15 @@ pipeline {
         }
         success {
             echo 'I am success block'
+	    slackSend channel: '#3musketers',
+                  color: 'good',
+                  message: "The pipeline ${currentBuild.fullDisplayName} completed successfully."
 	}
         failure {
             echo 'I am failure block'
+	    slackSend channel: '#3musketers',
+                  color: 'good',
+                  message: "The pipeline ${currentBuild.fullDisplayName} failed."	
         }
         unstable {
             echo 'I am unstable block'
